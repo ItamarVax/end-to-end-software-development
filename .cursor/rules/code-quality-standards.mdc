@@ -1,0 +1,18 @@
+---
+title: "Code Quality Standards"
+description: "Readable Java and meaningful tests for course assignments"
+alwaysApply: true
+---
+
+# Code Quality Standards
+
+## Readability
+- Prefer beginner-friendly Java, clear names and small methods. Explain decisions when helping the student learn.
+- Follow each assignment's interface signatures and constraints exactly.
+- Keep production code independent of JUnit; place test sources in `tests/`.
+- Add tests for real behavior when application code exists. Do not add always-passing placeholder tests.
+
+## Quality Commands
+- Full test suite: `bash scripts/test.sh`.
+- No standalone linter, formatter or type checker is configured. Compilation with `javac --release 25` is part of the test runner.
+- A test run with zero discovered tests must fail; infrastructure readiness is not evidence that application behavior works.

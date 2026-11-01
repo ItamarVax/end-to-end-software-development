@@ -1,0 +1,13 @@
+---
+title: "Glossary"
+description: "Terms from the EX1 assignment guide"
+alwaysApply: false
+---
+
+# Glossary
+
+- Instructor: a person who teaches zero or more workshops.
+- Workshop: an activity taught by an instructor, with teams registered to it.
+- Team: a group of students participating in one workshop.
+- Free student: a student who belongs to no team. Each student belongs to at most one team.
+- WorkshopSystem: the supplied Java interface through which all registration operations are performed.

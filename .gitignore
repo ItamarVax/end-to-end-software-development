@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Shared IntelliJ project configuration; local workspace settings stay ignored
+.idea/*
+!.idea/misc.xml
+!.idea/modules.xml
+*.iml
+!model/model.iml
+!logic/logic.iml
+
+# Generated build output
+out/
+build/
+*.class
+
+# Submission JARs in artifacts/ must be committed.
+
+# Downloaded test-only dependencies
+testlib/

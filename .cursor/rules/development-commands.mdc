@@ -1,0 +1,28 @@
+---
+title: "Development Commands"
+description: "Development and submission verification commands"
+alwaysApply: false
+---
+
+# Development Commands
+
+Machine-readable copy: `.darwin/config.json` (`commands`). Change both together.
+
+## Setup
+- JDK 25 is required. `JAVA_HOME` may select it explicitly.
+- Install or verify the pinned standalone JUnit runner: `bash scripts/setup-tests.sh`.
+- Lecturer-supplied API and tester JARs are in `lib/`.
+
+## Testing
+- Full suite: `bash scripts/test.sh`.
+- Scoped tests fall back to the full suite.
+- The runner compiles Java from `model/src/`, `logic/src/`, `src/`, and `tests/` into ignored `build/test-classes/`.
+- The runner intentionally fails if no tests are discovered.
+- Lecturer acceptance check: `bash scripts/acceptance-test.sh`; this rebuilds and tests the submission JARs without JUnit or test classes.
+
+## Build
+- Submission JARs: `bash scripts/build.sh`.
+- Output: `artifacts/workshop-model-impl.jar` and `artifacts/workshop-logic-impl.jar`.
+
+## Other Commands
+- No standalone lint, type-check, or application run command is configured. This project is an API library.
